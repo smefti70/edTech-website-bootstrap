@@ -44,6 +44,12 @@ section {
 
 /*For Extra Small Devices*/
 @media screen and (max-width:576px) {
+
+    .carousel-item,
+    .carousel-item img {
+        height: 250px;
+    }
+
     .register-now-section {
         flex-direction: column;
         justify-content: center;
