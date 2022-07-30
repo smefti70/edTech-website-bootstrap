@@ -65,6 +65,11 @@ section {
 
 
 @media screen and (min-width:577px) and (max-width:767px) {
+    .register-now-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .course-thumbnails-img {
         width: 100%;
@@ -80,6 +85,12 @@ section {
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
+
+    .register-now-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .course-thumbnails {
         display: flex;
@@ -119,6 +130,18 @@ h6 {
 .course-btn {
     margin-top: 25px;
     width: 170px;
+}
+
+/*Styles for Register Now Section*/
+.register-now-section {
+    height: 300px;
+    background-color: #289BDE;
+}
+
+.white-color-btn {
+    background-color: white;
+    color: #289BDE;
+    height: 40px;
 }
 
 /*Styles for Footer Section*/
