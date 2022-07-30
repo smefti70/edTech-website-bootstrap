@@ -17,14 +17,12 @@ header nav a {
 }
 
 section {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 /*Styles for Slider*/
 
 .carousel-item.active {
-    /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); */
     background: rgba(29, 29, 29, 0.7);
 }
 
@@ -32,6 +30,19 @@ section {
     position: relative;
     z-index: -1;
 }
+
+.colorful-btn {
+    color: white;
+    background-color: #289BDE;
+}
+
+.colorful-btn:hover {
+    color: white;
+    background-color: #136b9e;
+    border: 1px solid #136b9e;
+}
+
+/*Styles for responsivenes*/
 
 @media screen and (max-width:576px) {
 
@@ -46,10 +57,18 @@ section {
     p {
         font-size: 12px;
     }
+
+    .course-thumbnails-img {
+        width: 100%;
+    }
 }
 
 
 @media screen and (min-width:577px) and (max-width:767px) {
+
+    .course-thumbnails-img {
+        width: 100%;
+    }
 
     h1 {
         font-size: 25px;
@@ -62,6 +81,16 @@ section {
 
 @media screen and (min-width:768px) and (max-width:991px) {
 
+    .course-thumbnails {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .course-thumbnails-img {
+        height: 100%;
+    }
+
     h1 {
         font-size: 40px;
     }
@@ -72,18 +101,22 @@ section {
 }
 
 @media screen and (min-width:992px) {
+    .course-thumbnails-img {
+        height: 100%;
+    }
+
     .carousel-caption {
         transform: translateY(-50%);
     }
 }
 
-.colorful-btn {
-    color: white;
-    background-color: #289BDE;
+/*Styles for course section*/
+
+h6 {
+    color: #289BDE;
 }
 
-.colorful-btn:hover {
-    color: white;
-    background-color: #136b9e;
-    border: 1px solid #136b9e;
+.course-btn {
+    margin-top: 25px;
+    width: 170px;
 }
