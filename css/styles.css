@@ -120,3 +120,13 @@ h6 {
     margin-top: 25px;
     width: 170px;
 }
+
+/*Styles for Footer Section*/
+.footer-section {
+    height: 400px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+}
