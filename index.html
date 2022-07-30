@@ -23,8 +23,10 @@
 
         <!-- Navbar Section Starts -->
         <nav class="navbar navbar-expand-lg navbar-light mb-lg-3">
-            <a class="navbar-brand" href="#">Edu Tech</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            <a class="navbar-brand" href="#">
+                <h3>Edu Tech</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,21 +36,13 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Courses</a>
+                        <a class="nav-link" href="#course">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Deals</a>
+                        <a class="nav-link" href="#register">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Success</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            Register
-                        </a>
+                        <a class="nav-link" href="#faq">FAQ</a>
                     </li>
                 </ul>
             </div>
@@ -109,9 +103,13 @@
             </div>
         </section>
         <!-- Slider Section Ends -->
+    </header>
+    <!-- Header Section Ends -->
 
+    <!-- Main Section Starts -->
+    <main>
         <!-- Course Section Starts -->
-        <section
+        <section id="course"
             class="course-section container d-lg-flex d-md-flex d-flex justify-content-center align-items-center flex-column">
             <div class="course-info mb-5">
                 <h1 class="text-center fw-bold">Discover Our Popular <br> Courses</h1>
@@ -239,19 +237,42 @@
         <!-- Course Section Ends -->
 
         <!-- Register Now Section Starts -->
-        <section
-            class="register-now-section d-lg-flex d-md-flex d-flex justify-content-around align-items-center text-white">
+        <section id="register"
+            class="register-now-section rounded container d-lg-flex d-md-flex d-flex justify-content-around align-items-center text-white text-md-center text-sm-center">
             <div class="register-info">
                 <h1>Ready to join?</h1>
                 <p>It is a long established fact that a reader will be distracted by the <br>
                     readable content of a page when looking at its layout.</p>
             </div>
-            <div class="btn white-color-btn">Register Now</div>
+            <button type="button" class="btn white-color-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Register Now
+            </button>
+
+            <!--Modal-->
+            <div class="modal fade text-dark" id="exampleModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Successfully Subscribed!</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            You are now a member of our community.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Register Now Section Ends -->
 
         <!--FAQ Section Starts-->
-        <section class="faq-section container d-lg-flex justify-content-center align-items-center flex-column">
+        <section id="faq" class="faq-section container d-lg-flex justify-content-center align-items-center flex-column">
             <div class="faq-info mb-3">
                 <h1 class="text-center">Frequently Asked Questions</h1>
                 <p class="text-center">It is a long established fact that a reader will be distracted by the readable
@@ -339,9 +360,28 @@
             </div>
         </section>
         <!--FAQ Section Ends-->
-    </header>
-    <!-- Header Section Ends -->
 
+        <!-- Trusted By Section Starts -->
+        <section
+            class="trusted-by-section d-none d-md-none d-lg-flex justify-content-center align-items-center flex-column">
+            <div class="info mb-2">
+                <h1>Trusted by over 800+ companies</h1>
+            </div>
+            <div class="company-logos">
+                <img src="images/company/company-1.png" alt="">
+                <img class="img-margin" src="images/company/company-2.png" alt="">
+                <img class="img-margin" src="images/company/company-3.png" alt="">
+                <img class="img-margin" src="images/company/company-4.png" alt="">
+                <img class="img-margin" src="images/company/company-5.png" alt="">
+                <img class="img-margin" src="images/company/company-6.png" alt="">
+            </div>
+        </section>
+        <!-- Trusted By Section Ends -->
+
+    </main>
+    <!-- Main Section Ends -->
+
+    <!--Footer Section Starts-->
     <footer
         class="footer-section bg-dark text-white text-center d-lg-flex d-md-flex d-flex justify-content-center align-items-center">
         <div>
@@ -357,6 +397,7 @@
             </div>
         </div>
     </footer>
+    <!--Footer Section Ends-->
 
     <!-- JS Needed by Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
